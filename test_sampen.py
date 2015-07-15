@@ -23,6 +23,22 @@ class SampEnTests(unittest.TestCase):
             ]
         )
 
+    def test_sampen_with_variance_and_epoch_2(self):
+        data = []
+
+        with open('sampentest.txt', 'r') as file:
+            for row in file:
+                data.append(float(row.strip(' \t\n\r')))
+
+        self.assertEqual(
+            sampen_with_variance(data, mm=2, r=0.2, normalize=False),
+            [
+                (0, 2.1965947354057174, 0.002685407401832965),
+                (1, 2.2242457199296832, 0.004642522636570079),
+                (2, 2.1980190478634287, 0.007533356114576163),
+            ]
+        )
+
 
 if __name__ == '__main__':
     unittest.main()
