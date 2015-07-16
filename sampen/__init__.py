@@ -4,7 +4,7 @@ import numpy as np
 """SAMPLE ENTROPY
 
 ---------------------------------------------------------------------------
-Last revised: 30 June 2015 (by joe@kinsa.us)
+Last revised: 15 July 2015 (by joe@kinsa.us)
 
 Modified version (ported C code to Python, modified to run as a callable
 function) of original code:
@@ -36,7 +36,7 @@ For updates to this software, please visit PhysioNet
 
 def normalize_data(data):
     """
-    Normalize such that the mean of the input is 0 and the sample, variance is 1
+    Normalize such that the mean of the input is 0 and the sample variance is 1
 
     :param data: The data set, expressed as a flat list of floats.
     :return: The normalized data set, as a flat list of floats.
