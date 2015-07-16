@@ -60,7 +60,7 @@ def normalize_data(data):
     return data
 
 
-def sampen_with_variance(data, mm=2, r=0.2, normalize=False):
+def sampen2(data, mm=2, r=0.2, normalize=False):
     """
     Calculates an estimate of sample entropy and the variance of the estimate.
 

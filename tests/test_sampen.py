@@ -9,7 +9,7 @@ class SampEnTests(unittest.TestCase):
         dir = os.path.dirname(__file__)
         self.file_path = os.path.join(dir, 'sampentest.txt')
 
-    def test_sampen_with_variance(self):
+    def test_sampen2_matching_makefile(self):
         data = []
 
         with open(self.file_path, 'r') as file:
@@ -28,7 +28,7 @@ class SampEnTests(unittest.TestCase):
             ]
         )
 
-    def test_sampen_with_variance_and_epoch_2(self):
+    def test_sampen2_with_defaults(self):
         data = []
 
         with open(self.file_path, 'r') as file:
