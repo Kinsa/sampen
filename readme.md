@@ -14,7 +14,7 @@ Clone the repo:
 $ git clone <SSH clone URL>
 ```
 
-This will create a new directory, `pyeeg` with the repo in it. Change into that directory and execute `setup.py`:
+This will create a new directory, with the repo in it. Change into that directory and execute `setup.py`:
 
 ```sh
 $ cd $_
