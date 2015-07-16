@@ -6,7 +6,7 @@ setup(
     version='0.0.1',
     description='A Python module to calculate Sample Entropy (SampEn).',
     url='http://www.physionet.org/physiotools/sampen',
-    download_url='https://github.com/jbergantine/sampen',
+    download_url='https://github.com/jbergantine/sampen/tarball/0.0.1/',
     author='Doug Lake',
     author_email='dlake@virginia.edu',
     maintainer='Joe Bergantine',
