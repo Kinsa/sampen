@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 import math
 import numpy as np
 
@@ -222,4 +220,4 @@ def sampen_with_variance(data, mm=2, r=0.2, normalize=False):
             response.append((m, None, None))
         else:
             response.append((m, -math.log(p[m]), s1[m]))
-            return response
+    return response
