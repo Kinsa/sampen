@@ -60,3 +60,6 @@ target/
 bin/
 include/
 pip-selfcheck.json
+
+# Apple
+.DS_Store

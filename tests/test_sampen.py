@@ -1,13 +1,18 @@
+import os
 import unittest
 
 from sampen import sampen_with_variance
 
 
 class SampEnTests(unittest.TestCase):
+    def setUp(self):
+        dir = os.path.dirname(__file__)
+        self.file_path = os.path.join(dir, 'sampentest.txt')
+
     def test_sampen_with_variance(self):
         data = []
 
-        with open('sampentest.txt', 'r') as file:
+        with open(self.file_path, 'r') as file:
             for row in file:
                 data.append(float(row.strip(' \t\n\r')))
 
@@ -26,7 +31,7 @@ class SampEnTests(unittest.TestCase):
     def test_sampen_with_variance_and_epoch_2(self):
         data = []
 
-        with open('sampentest.txt', 'r') as file:
+        with open(self.file_path, 'r') as file:
             for row in file:
                 data.append(float(row.strip(' \t\n\r')))
 

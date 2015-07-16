@@ -1,7 +1,7 @@
 sampen
 ======
 
-Python code to calculate Sample Entropy (SampEn). Partial port of C code from [PhysioNet](http://www.physionet.org/physiotools/sampen).
+Python code to calculate Sample Entropy (SampEn). Partial port of C code from [PhysioNet](http://www.physionet.org/physiotools/sampen). (The method to calculate Sample Entropy without variance not yet ported.)
 
 Installation
 ------------
@@ -26,5 +26,5 @@ $ python setup.py install
 From the repo:
 
 ```sh
-$ python ./test_sampen.py
+$ python ./tests/test_sampen.py
 ```
