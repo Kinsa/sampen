@@ -90,9 +90,9 @@ def sampen2(data, mm=2, r=0.2, normalize=False):
 
     mm += 1
 
-    MM = 2 * mm
+    mm_dbld = 2 * mm
 
-    if MM > n:
+    if mm_dbld > n:
         raise ValueError(
             "Maximum epoch length of %d too large for time series of length "
             "%d ((mm + 1) * 2 > n)" % (
@@ -108,23 +108,23 @@ def sampen2(data, mm=2, r=0.2, normalize=False):
     run = [0] * n
     run1 = run[:]
 
-    R1 = [0] * (n * MM)
-    R2 = R1[:]
-    F = R1[:]
+    r1 = [0] * (n * mm_dbld)
+    r2 = r1[:]
+    f = r1[:]
 
-    F1 = [0] * (n * mm)
-    F2 = F1[:]
+    f1 = [0] * (n * mm)
+    f2 = f1[:]
 
-    K = [0] * ((mm + 1) * mm)
+    k = [0] * ((mm + 1) * mm)
 
-    A = [0] * mm
-    B = A[:]
-    p = A[:]
-    v1 = A[:]
-    v2 = A[:]
-    s1 = A[:]
-    n1 = A[:]
-    n2 = A[:]
+    a = [0] * mm
+    b = a[:]
+    p = a[:]
+    v1 = a[:]
+    v2 = a[:]
+    s1 = a[:]
+    n1 = a[:]
+    n2 = a[:]
 
     for i in range(n - 1):
         nj = n - i - 1
@@ -138,76 +138,76 @@ def sampen2(data, mm=2, r=0.2, normalize=False):
                 m1 = mm if mm < run[jj] else run[jj]
 
                 for m in range(m1):
-                    A[m] += 1
+                    a[m] += 1
                     if j < n - 1:
-                        B[m] += 1
-                    F1[i + m * n] += 1
-                    F[i + n * m] += 1
-                    F[j + n * m] += 1
+                        b[m] += 1
+                    f1[i + m * n] += 1
+                    f[i + n * m] += 1
+                    f[j + n * m] += 1
 
             else:
                 run[jj] = 0
 
-        for j in range(MM):
+        for j in range(mm_dbld):
             run1[j] = run[j]
-            R1[i + n * j] = run[j]
+            r1[i + n * j] = run[j]
 
-        if nj > MM - 1:
-            for j in range(MM, nj):
+        if nj > mm_dbld - 1:
+            for j in range(mm_dbld, nj):
                 run1[j] = run[j]
 
-    for i in range(1, MM):
+    for i in range(1, mm_dbld):
         for j in range(i - 1):
-            R2[i + n * j] = R1[i - j - 1 + n * j]
-    for i in range(MM, n):
-        for j in range(MM):
-            R2[i + n * j] = R1[i - j - 1 + n * j]
+            r2[i + n * j] = r1[i - j - 1 + n * j]
+    for i in range(mm_dbld, n):
+        for j in range(mm_dbld):
+            r2[i + n * j] = r1[i - j - 1 + n * j]
     for i in range(n):
         for m in range(mm):
-            FF = F[i + n * m]
-            F2[i + n * m] = FF - F1[i + n * m]
-            K[(mm + 1) * m] += FF * (FF - 1)
+            ff = f[i + n * m]
+            f2[i + n * m] = ff - f1[i + n * m]
+            k[(mm + 1) * m] += ff * (ff - 1)
     m = mm - 1
     while m > 0:
-        B[m] = B[m - 1]
+        b[m] = b[m - 1]
         m -= 1
-    B[0] = float(n) * (n - 1.0) / 2.0
+    b[0] = float(n) * (n - 1.0) / 2.0
     for m in range(mm):
-        p[m] = float(A[m]) / float(B[m])
-        v2[m] = p[m] * (1.0 - p[m]) / B[m]
+        p[m] = float(a[m]) / float(b[m])
+        v2[m] = p[m] * (1.0 - p[m]) / b[m]
     for m in range(mm):
         d2 = m + 1 if m + 1 < mm - 1 else mm - 1
         for d in range(d2):
             for i1 in range(d + 1, n):
                 i2 = i1 - d - 1
-                nm1 = F1[i1 + n * m]
-                nm3 = F1[i2 + n * m]
-                nm2 = F2[i1 + n * m]
-                nm4 = F2[i2 + n * m]
-                # if R1[i1 + n * j] >= m + 1:
+                nm1 = f1[i1 + n * m]
+                nm3 = f1[i2 + n * m]
+                nm2 = f2[i1 + n * m]
+                nm4 = f2[i2 + n * m]
+                # if r1[i1 + n * j] >= m + 1:
                 #    nm1 -= 1
-                # if R2[i1 + n * j] >= m + 1:
+                # if r2[i1 + n * j] >= m + 1:
                 #    nm4 -= 1
                 for j in range(2 * (d + 1)):
-                    if R2[i1 + n * j] >= m + 1:
+                    if r2[i1 + n * j] >= m + 1:
                         nm2 -= 1
                 for j in range(2 * d + 1):
-                    if R1[i2 + n * j] >= m + 1:
+                    if r1[i2 + n * j] >= m + 1:
                         nm3 -= 1
-                K[d + 1 + (mm + 1) * m] += float(2 * (nm1 + nm2) * (nm3 + nm4))
+                k[d + 1 + (mm + 1) * m] += float(2 * (nm1 + nm2) * (nm3 + nm4))
 
     n1[0] = float(n * (n - 1) * (n - 2))
     for m in range(mm - 1):
         for j in range(m + 2):
-            n1[m + 1] += K[j + (mm + 1) * m]
+            n1[m + 1] += k[j + (mm + 1) * m]
     for m in range(mm):
         for j in range(m + 1):
-            n2[m] += K[j + (mm + 1) * m]
+            n2[m] += k[j + (mm + 1) * m]
 
     # calculate standard deviation for the set
     for m in range(mm):
         v1[m] = v2[m]
-        dv = (n2[m] - n1[m] * p[m] * p[m]) / (B[m] * B[m])
+        dv = (n2[m] - n1[m] * p[m] * p[m]) / (b[m] * b[m])
         if dv > 0:
             v1[m] += dv
         s1[m] = math.sqrt(v1[m])
