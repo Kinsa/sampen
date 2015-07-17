@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='sampen',
-    version='0.0.3',
+    version='0.0.4',
     description='A Python module to calculate Sample Entropy (SampEn) of a'
                 ' time series.',
     url='http://www.physionet.org/physiotools/sampen',
@@ -25,5 +25,7 @@ setup(
         'Topic :: Scientific/Engineering :: Mathematics',
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.4',
     ]
 )

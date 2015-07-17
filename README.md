@@ -17,7 +17,7 @@ $ pip install sampen
 Clone the repo:
 
 ```sh
-$ git clone <SSH clone URL>
+$ git clone git@github.com:jbergantine/sampen.git
 ```
 
 This will create a new directory with the repo in it. Change into that directory and execute `setup.py`:
