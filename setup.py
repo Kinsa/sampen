@@ -15,5 +15,6 @@ setup(
     packages=['sampen'],
     install_requires=[
         'numpy>=1.9.2',
-    ]
+    ],
+    keywords=['sample entropy', 'sampen']
 )
