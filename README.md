@@ -27,8 +27,8 @@ $ cd $_
 $ python setup.py install
 ```
 
-Use
----
+Usage
+-----
 
 Unlike the original C code which loads time series data either from standard input or a file, this script expects the time series to be expressed in a list of floats. If the time series exists in a flat text file that can be loaded into Python and saved into a list:
 
