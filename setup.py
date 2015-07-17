@@ -17,5 +17,13 @@ setup(
     install_requires=[
         'numpy>=1.9.2',
     ],
-    keywords=['sample entropy', 'sampen']
+    keywords=['sample entropy', 'sampen'],
+    classifiers=[
+        'Development Status :: 5 - Production/Stable',
+        'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
+        'Intended Audience :: Science/Research',
+        'Topic :: Scientific/Engineering :: Mathematics',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.7',
+    ]
 )
