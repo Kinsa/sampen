@@ -30,22 +30,22 @@ $ python setup.py install
 Use
 ---
 
-Unlike the original C code which loads time series data either from standard input or a file, this script expects the time series to be expressed in a list of floats. If the time series exists in a flat text file that can be loaded into python and saved into a list:
+Unlike the original C code which loads time series data either from standard input or a file, this script expects the time series to be expressed in a list of floats. If the time series exists in a flat text file that can be loaded into Python and saved into a list:
 
 ```py
 from sampen import sampen2
 
 
 # initialize a list
-data = []
+series_data = []
 
 # open the file and read each line into the list
 with open('relative/path/to/file.txt', 'r') as file:
     for row in file:
-        data.append(float(row.strip(' \t\n\r')))
+        series_data.append(float(row.strip(' \t\n\r')))
 
 # calculate the sample entroyp
-sampen_of_series = sampen2(data)
+sampen_of_series = sampen2(series_data)
 ```
 
 The default maximum epoch length (`m`) is `2`, the default tolerance (`r`) is `0.2`.
