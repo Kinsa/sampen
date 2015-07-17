@@ -3,11 +3,11 @@ from setuptools import setup
 
 setup(
     name='sampen',
-    version='0.0.4',
+    version='0.0.5',
     description='A Python module to calculate Sample Entropy (SampEn) of a'
                 ' time series.',
     url='http://www.physionet.org/physiotools/sampen',
-    download_url='https://github.com/jbergantine/sampen/tarball/0.0.4/',
+    download_url='https://github.com/jbergantine/sampen/tarball/0.0.5/',
     author='Doug Lake',
     author_email='dlake@virginia.edu',
     maintainer='Joe Bergantine',
