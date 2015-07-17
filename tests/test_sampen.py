@@ -1,7 +1,7 @@
 import os
 import unittest
 
-from sampen import sampen_with_variance
+from sampen import sampen2
 
 
 class SampEnTests(unittest.TestCase):
@@ -17,7 +17,7 @@ class SampEnTests(unittest.TestCase):
                 data.append(float(row.strip(' \t\n\r')))
 
         self.assertEqual(
-            sampen_with_variance(data, mm=5, normalize=True),
+            sampen2(data, mm=5, normalize=True),
             [
                 (0, 2.1965947354057174, 0.002685407401832965),
                 (1, 2.2242457199296832, 0.004642522636570079),
@@ -36,7 +36,7 @@ class SampEnTests(unittest.TestCase):
                 data.append(float(row.strip(' \t\n\r')))
 
         self.assertEqual(
-            sampen_with_variance(data, mm=2, r=0.2, normalize=False),
+            sampen2(data, mm=2, r=0.2, normalize=False),
             [
                 (0, 2.140629540027156, 0.0028357991885715863),
                 (1, 2.162868347337613, 0.004903248034526253),
