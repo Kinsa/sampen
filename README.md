@@ -6,6 +6,12 @@ Python code to calculate [Sample Entropy (SampEn)](http://www.physionet.org/phys
 Installation
 ------------
 
+### Via PIP
+
+```sh
+$ pip install sampen
+```
+
 ### Via Git
 
 Clone the repo:
