@@ -39,8 +39,10 @@ def normalize_data(data):
     Normalize such that the mean of the input is 0 and the sample variance is 1
 
     :param data: The data set, expressed as a flat list of floats.
-    :return: The normalized data set, as a flat list of floats.
+    :type data: list
 
+    :return: The normalized data set, as a flat list of floats.
+    :rtype: list
     """
 
     var = 0.0
