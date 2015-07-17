@@ -1,6 +1,3 @@
-import math
-import numpy as np
-
 """SAMPLE ENTROPY
 
 ---------------------------------------------------------------------------
@@ -30,8 +27,11 @@ view the agreement at http://www.fsf.org/copyleft/gpl.html.
 You may contact the author via electronic mail (dlake@virginia.edu).
 For updates to this software, please visit PhysioNet
 (http://www.physionet.org/).
-
 """
+
+
+import math
+import numpy as np
 
 
 def normalize_data(data):
