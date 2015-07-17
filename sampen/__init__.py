@@ -64,14 +64,18 @@ def sampen2(data, mm=2, r=0.2, normalize=False):
     """
     Calculates an estimate of sample entropy and the variance of the estimate.
 
-    :param data: List[Floats]. The data set (time series).
+    :param data: The data set (time series) as a list of floats.
+    :type data: list
 
-    :param mm: Int. Maximum length of epoch (subseries).
+    :param mm: Maximum length of epoch (subseries).
+    :type mm: int
 
-    :param r: Float. Tolerance. Typically 0.1 or 0.2.
+    :param r: Tolerance. Typically 0.1 or 0.2.
+    :type r: float
 
-    :param normalize: Bool. Normalize such that the mean of the input is 0 and
+    :param normalize: Normalize such that the mean of the input is 0 and
     the sample, variance is 1.
+    :type normalize: bool
 
     :return: List[(Int, Float/None, Float/None)...]
 
@@ -84,6 +88,8 @@ def sampen2(data, mm=2, r=0.2, normalize=False):
 
     If there are no matches (the data set is unique) the sample entropy and
     standard deviation will return None.
+
+    :rtype: list
     """
 
     n = len(data)
