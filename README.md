@@ -6,6 +6,8 @@ Python code to calculate [Sample Entropy (SampEn)](http://www.physionet.org/phys
 Installation
 ------------
 
+This project uses ez_setup. Either network access is required or setuptools >= 18.2 needs to be pre-installed. Instructions for downloading setuptools can be found in the [EasyInstall instructions](http://pythonhosted.org/setuptools/easy_install.html#installation-instructions). Those instructions also have tips for dealing with firewalls as well as how to manually download and install setuptools.
+
 ### Via PIP
 
 ```sh
