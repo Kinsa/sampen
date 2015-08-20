@@ -7,11 +7,11 @@ ez_setup.use_setuptools()
 
 setup(
     name='sampen',
-    version='0.0.7',
+    version='0.0.8',
     description='A Python module to calculate Sample Entropy (SampEn) of a'
                 ' time series.',
     url='http://www.physionet.org/physiotools/sampen',
-    download_url='https://github.com/jbergantine/sampen/tarball/0.0.6/',
+    download_url='https://github.com/jbergantine/sampen/tarball/0.0.8/',
     author='Doug Lake',
     author_email='dlake@virginia.edu',
     maintainer='Joe Bergantine',
