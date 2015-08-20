@@ -1,9 +1,13 @@
+import ez_setup
+
 from setuptools import setup
 
 
+ez_setup.use_setuptools()
+
 setup(
     name='sampen',
-    version='0.0.6',
+    version='0.0.7',
     description='A Python module to calculate Sample Entropy (SampEn) of a'
                 ' time series.',
     url='http://www.physionet.org/physiotools/sampen',
