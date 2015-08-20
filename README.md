@@ -87,10 +87,8 @@ Return something like:
 Running Tests
 -------------
 
-For development, from the repo (if the package is installed rather than simply cloned, skip setting the PYTHONPATH):
-
 ```sh
-$ PYTHONPATH=$PYTHONPATH:./sampen/ export PYTHONPATH; python ./tests/test_sampen.py
+$ python ./tests/test_sampen.py
 ```
 
 Contributing
