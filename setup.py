@@ -1,17 +1,13 @@
-import ez_setup
-
 from setuptools import setup
 
 
-ez_setup.use_setuptools()
-
 setup(
     name='sampen',
-    version='0.0.8',
+    version='0.0.9',
     description='A Python module to calculate Sample Entropy (SampEn) of a'
                 ' time series.',
     url='http://www.physionet.org/physiotools/sampen',
-    download_url='https://github.com/jbergantine/sampen/tarball/0.0.8/',
+    download_url='https://github.com/jbergantine/sampen/tarball/0.0.9/',
     author='Doug Lake',
     author_email='dlake@virginia.edu',
     maintainer='Joe Bergantine',
@@ -23,19 +19,17 @@ setup(
     ],
     keywords=['sample entropy', 'sampen'],
     classifiers=[
-        'Development Status :: 5 - Production/Stable',
-        'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
+        'Development Status :: 4 - Beta',
+        'Environment :: Console',
         'Intended Audience :: Science/Research',
-        'Operating System :: MacOS',
-        'Operating System :: Microsoft :: Windows',
-        'Operating System :: POSIX',
-        'Operating System :: Unix',
-        'Topic :: Scientific/Engineering :: Bio-Informatics',
-        'Topic :: Scientific/Engineering :: Information Analysis',
-        'Topic :: Scientific/Engineering :: Mathematics',
+        'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
+        'Operating System :: OS Independent',
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
+        'Topic :: Scientific/Engineering :: Bio-Informatics',
+        'Topic :: Scientific/Engineering :: Information Analysis',
+        'Topic :: Scientific/Engineering :: Mathematics',
     ]
 )
