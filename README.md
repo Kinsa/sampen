@@ -8,6 +8,11 @@ Installation
 
 This project uses ez_setup. Either network access is required or setuptools >= 18.2 needs to be pre-installed. Instructions for downloading setuptools can be found in the [EasyInstall instructions](http://pythonhosted.org/setuptools/easy_install.html#installation-instructions). Those instructions also have tips for dealing with firewalls as well as how to manually download and install setuptools.
 
+**Custom Installation Locations**
+
+If you are installing this project to somewhere other than the main site-packages directory, you should first install setuptools using the instructions for [Custom Installation Locations](http://pythonhosted.org/setuptools/easy_install.html#custom-installation-locations), before installing this project.
+
+
 ### Via PIP
 
 ```sh
