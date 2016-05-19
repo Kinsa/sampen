@@ -51,7 +51,7 @@ with open('relative/path/to/file.txt', 'r') as file:
     for row in file:
         series_data.append(float(row.strip(' \t\n\r')))
 
-# calculate the sample entroyp
+# calculate the sample entropy
 sampen_of_series = sampen2(series_data)
 ```
 
@@ -67,7 +67,7 @@ Therefore, inspecting the returned data:
 >>> sampen_of_series
 ```
 
-Return something like:
+Returns something like:
 
 ```py
 [
