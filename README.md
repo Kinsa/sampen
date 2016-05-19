@@ -91,8 +91,7 @@ Running Tests
 $ python setup.py test
 ```
 
-With TOX
-========
+### With TOX
 
 First, install Tox, then run the tests.
 
