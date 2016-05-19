@@ -88,7 +88,17 @@ Running Tests
 -------------
 
 ```sh
-$ python ./tests/test_sampen.py
+$ python setup.py test
+```
+
+With TOX
+========
+
+First, install Tox, then run the tests.
+
+```sh
+$ pip install tox
+$ tox
 ```
 
 Contributing
