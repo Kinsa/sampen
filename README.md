@@ -7,7 +7,7 @@ Python code to calculate [Sample Entropy (SampEn)](http://www.physionet.org/phys
 
 ![](https://travis-ci.org/jbergantine/sampen.svg?branch=develop)
 
-[View builds on TravisCI.](https://travis-ci.org/jbergantine/django-templatetags)
+[View builds on TravisCI.](https://travis-ci.org/jbergantine/sampen)
 
 
 Installation
