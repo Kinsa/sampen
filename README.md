@@ -3,6 +3,13 @@ sampen
 
 Python code to calculate [Sample Entropy (SampEn)](http://www.physionet.org/physiotools/sampen/). Partial port of v1.2 C-language code from [PhysioNet](http://www.physionet.org/physiotools/sampen/c/) last updated 1 November 2004, by George Moody. Original functions not ported: `readdata()`, `sampen()`. Functions ported: `normalize_data()`, `sampen2()`.
 
+---
+
+![](https://travis-ci.org/jbergantine/sampen.svg?branch=develop)
+
+[View builds on TravisCI.](https://travis-ci.org/jbergantine/sampen)
+
+
 Installation
 ------------
 
@@ -44,7 +51,7 @@ with open('relative/path/to/file.txt', 'r') as file:
     for row in file:
         series_data.append(float(row.strip(' \t\n\r')))
 
-# calculate the sample entroyp
+# calculate the sample entropy
 sampen_of_series = sampen2(series_data)
 ```
 
@@ -60,7 +67,7 @@ Therefore, inspecting the returned data:
 >>> sampen_of_series
 ```
 
-Return something like:
+Returns something like:
 
 ```py
 [
@@ -81,7 +88,16 @@ Running Tests
 -------------
 
 ```sh
-$ python ./tests/test_sampen.py
+$ python setup.py test
+```
+
+### With TOX
+
+First, install Tox, then run the tests.
+
+```sh
+$ pip install tox
+$ tox
 ```
 
 Contributing
