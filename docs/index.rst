@@ -123,3 +123,8 @@ Documentation is written in `ReStructuredText`_ and built with `Sphinx`_.
 1. Install ``sphinx`` and ``sphinx-autobuild`` as necessary
 2. Edit ``docs/index.rst``
 3. Build the HTML with ``$ make html`` from within the ``docs`` directory
+
+Tagging Releases
+----------------
+
+Update version number in ``setup.py`` and in ``docs/index.rst``
