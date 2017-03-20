@@ -1,6 +1,19 @@
 [![](https://img.shields.io/pypi/v/sampen.svg)](https://pypi.org/project/sampen/) [![](https://img.shields.io/pypi/pyversions/sampen.svg)](https://pypi.org/project/sampen/) [![](https://travis-ci.org/jbergantine/sampen.svg?branch=develop)](https://travis-ci.org/jbergantine/sampen)
 
-Python code to calculate [Sample Entropy (SampEn)](http://www.physionet.org/physiotools/sampen/). Partial port of v1.2 C-language code from [PhysioNet](http://www.physionet.org/physiotools/sampen/c/) last updated 1 November 2004, by George Moody. Original functions not ported: `readdata()`, `sampen()`. Functions ported: `normalize_data()`, `sampen2()`.
+Partial port of v1.2 C-language code for estimating Sample Entropy using SampEn from [PhysioNet](http://www.physionet.org/physiotools/sampen/c/) to Python. C-language code last updated 1 November 2004, by George Moody.
+
+Functions ported:
+- `normalize_data()`
+- `sampen2()`
+
+Functions not ported:
+- `readdata()`
+- `sampen()`
+
+For more information and the repository, please checkout:
+- original C-language code and docs: [http://www.physionet.org/physiotools/sampen/]()
+- home and docs: [https://github.com/jbergantine/sampen/blob/master/README.md]()
+- repository: [https://github.com/jbergantine/sampen]()
 
 Installation
 ------------
