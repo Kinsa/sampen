@@ -27,6 +27,6 @@ For more information and the repository please checkout:
 
 - original C-language code and docs: http://www.physionet.org/physiotools/sampen/
 
-- home and docs: https://readthedocs.org/projects/sampen/
+- home and docs: https://readthedocs.org/projects/sampen/stable/
 
 - repository: https://github.com/jbergantine/sampen/
