@@ -13,18 +13,20 @@ Partial port of v1.2 C-language code for estimating Sample Entropy using SampEn 
 
 Functions ported:
 
-- normalize_data()
+- ``normalize_data()``
 
-- sampen2()
+- ``sampen2()``
 
 Not ported:
 
-- readdata()
+- ``readdata()``
 
-- sampen()
+- ``sampen()``
 
 For more information and the repository please checkout:
 
 - original C-language code and docs: http://www.physionet.org/physiotools/sampen/
+
+- home and docs: https://readthedocs.org/projects/sampen/
 
 - repository: https://github.com/jbergantine/sampen/
