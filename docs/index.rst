@@ -132,3 +132,15 @@ Update ``version`` and ``download_url`` in ``setup.py``.
 Update the ``version`` and ``release`` in ``docs/conf.rst``
 
 Remake documentation
+
+Pushing Releases to PyPi
+------------------------
+
+Where ``XX`` is the version (e.g. ``0.0.15``)
+
+::
+
+  python setup.py sdist
+  python setup.py bdist_wheel --universal
+  twine upload dist/sampen-XX* -r pypitest
+  twine upload dist/sampen-XX*
