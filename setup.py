@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='sampen',
-    version='0.0.12',
+    version='0.0.13',
     description='A Python module to calculate an estimation of the '
                 'Sample Entropy of a time series.',
     long_description=open("README.rst").read(),
