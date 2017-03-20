@@ -127,6 +127,8 @@ Documentation is written in `ReStructuredText`_ and built with `Sphinx`_.
 Tagging Releases
 ----------------
 
-Update version number in ``setup.py`` and in ``docs/index.rst``
+Update ``version`` and ``download_url`` in ``setup.py``.
+
+Update the ``version`` and ``release`` in ``docs/conf.rst``
 
 Remake documentation
