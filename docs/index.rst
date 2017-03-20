@@ -120,7 +120,7 @@ Documentation is written in `ReStructuredText`_ and built with `Sphinx`_.
 .. _Sphinx: http://www.sphinx-doc.org/
 
 
-1. Install ``sphinx`` and ``sphinx-autobuild`` as necessary
+1. Install ``sphinx`` and ``sphinx-autobuild`` as necessary via pip
 2. Edit ``docs/index.rst``
 3. Build the HTML with ``$ make html`` from within the ``docs`` directory
 
@@ -135,6 +135,8 @@ Remake documentation
 
 Pushing Releases to PyPi
 ------------------------
+
+Install ``wheel`` and ``twine`` as necessary via pip
 
 Where ``XX`` is the version (e.g. ``0.0.15``)
 
