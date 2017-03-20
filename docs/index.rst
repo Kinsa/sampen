@@ -128,3 +128,5 @@ Tagging Releases
 ----------------
 
 Update version number in ``setup.py`` and in ``docs/index.rst``
+
+Remake documentation
