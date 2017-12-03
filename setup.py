@@ -8,7 +8,7 @@ setup(
                 'Sample Entropy of a time series.',
     long_description=open("README.rst").read(),
     url='https://readthedocs.org/projects/sampen/',
-    download_url='https://github.com/jbergantine/sampen/tarball/0.0.15/',
+    download_url='https://github.com/bergantine/sampen/tarball/0.0.15/',
     author='Joe Bergantine',
     author_email='joe@kinsa.us',
     maintainer='Joe Bergantine',

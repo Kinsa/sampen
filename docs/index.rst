@@ -30,7 +30,7 @@ Clone the repo:
 
 ::
 
-  $ git clone git@github.com:jbergantine/sampen.git
+  $ git clone git@github.com:bergantine/sampen.git
 
 This will create a new directory with the repo in it. Change into that directory and install::
 
