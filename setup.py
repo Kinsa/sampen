@@ -3,12 +3,12 @@ from setuptools import setup
 
 setup(
     name='sampen',
-    version='0.0.16',
+    version='0.0.17',
     description='A Python module to calculate an estimation of the '
                 'Sample Entropy of a time series.',
     long_description=open("README.rst").read(),
     url='https://readthedocs.org/projects/sampen/',
-    download_url='https://github.com/bergantine/sampen/tarball/0.0.16/',
+    download_url='https://github.com/bergantine/sampen/tarball/0.0.17/',
     author='Joe Bergantine',
     author_email='joe@kinsa.us',
     maintainer='Joe Bergantine',
@@ -33,6 +33,7 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
         'Topic :: Scientific/Engineering :: Bio-Informatics',
         'Topic :: Scientific/Engineering :: Information Analysis',
         'Topic :: Scientific/Engineering :: Mathematics',
