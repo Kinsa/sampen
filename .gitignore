@@ -57,6 +57,7 @@ docs/_build/
 target/
 
 # Virtualenv / PIP
+.venv
 bin/
 include/
 pip-selfcheck.json
