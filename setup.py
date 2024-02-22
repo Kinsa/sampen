@@ -3,16 +3,16 @@ from setuptools import setup
 
 setup(
     name='sampen',
-    version='0.0.17',
+    version='0.0.18',
     description='A Python module to calculate an estimation of the '
                 'Sample Entropy of a time series.',
     long_description=open("README.rst").read(),
     url='https://readthedocs.org/projects/sampen/',
-    download_url='https://github.com/bergantine/sampen/tarball/0.0.17/',
-    author='Joe Bergantine',
-    author_email='joe@kinsa.us',
-    maintainer='Joe Bergantine',
-    maintainer_email='joe@kinsa.us',
+    download_url='https://github.com/Kinsa/sampen/tarball/0.0.17/',
+    author='Kinsa Creative Incorporated',
+    author_email='enquiries@kinsa.cc',
+    maintainer='Kinsa Creative Incorporated',
+    maintainer_email='enquiries@kinsa.cc',
     license='GNU',
     packages=['sampen'],
     install_requires=[
