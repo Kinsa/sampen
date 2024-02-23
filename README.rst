@@ -31,4 +31,4 @@ For more information and the repository please checkout:
 
 - home and docs: http://sampen.readthedocs.io/en/stable/
 
-- repository: https://github.com/bergantine/sampen/
+- repository: https://github.com/Kinsa/sampen/
