@@ -1,9 +1,5 @@
 .. sampen documentation master file
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
 SampEn
 ======
 
